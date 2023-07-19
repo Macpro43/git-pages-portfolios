@@ -172,9 +172,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -185,6 +185,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -248,4 +249,294 @@ textarea {
 
 
 
+.content-wrapper {
 
+  max-width: 1024px;
+  margin: auto;
+  display: grid;
+
+}
+
+
+.main-nav {
+  width: 100%;
+}
+
+#navigation {
+  padding: 30px;
+}
+
+#navigation ul {
+  float: right;
+}
+
+#navigation ul li {
+  display: inline-block;
+  float: left;
+}
+
+#navigation ul li:not(:first-child) {
+  margin-left: 25px;
+}
+
+#navigation ul li a {
+  display: inline-block;
+  outline: none;
+  color: #1f2227;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+}
+
+#navigation ul li a:hover {
+  color: #808080;
+  text-decoration: none;
+}
+
+
+
+
+/* ==========================================================================
+   company sections ---------- >
+   ========================================================================== */
+
+
+
+.index-company-section {
+  margin-top: 74px;
+}
+
+.work-section-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+.work-section-title span {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+
+.work-section-1 {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+
+}
+
+.work-section-2 {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+
+}
+
+.work-section-3-1 {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 24px;
+
+}
+
+
+
+
+
+#MR-index-img {
+  background: lightblue url("/img/homepage/colorist-app-index.png") no-repeat center;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#Auction-Rebrand-index-img {
+  background: lightblue url("/img/homepage/Auction-rebrand-index.png") no-repeat center;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+#Auction-TPS-index-img {
+  background: lightblue url("/img/homepage/TPS-index-long.png") no-repeat center;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#Ten-x-offerselect-index-img {
+
+  background: lightblue url("/img/homepage/Offer-select-long.png") no-repeat center;
+
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+
+#Auction-index-android-app-img {
+
+  background: lightblue url("/img/homepage/Auction-android-long.png") no-repeat center;
+
+  background-size: 60%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+#chimecard-index-img {
+
+  background: lightblue url("/img/homepage/chimecard-index-long.png") no-repeat center;
+
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+#Movoto-index-img {
+
+  background: lightblue url("/img/homepage/movoto-index-long.png") no-repeat center;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+
+
+.project-container {
+  background: #fff;
+  height: 300px;
+  box-shadow: 0px 45px 100px rgba(0, 0, 0, .4);
+  cursor: pointer;
+  border-radius: 12px;
+  transition: .10s ease-in-out;
+  position: relative;
+  overflow: hidden;
+
+
+
+  .view-project {
+    font-size: 20;
+    position: absolute;
+    color: #fff;
+    right: 120px;
+    bottom: -30px;
+    font-weight: 900;
+  }
+
+  .view-project-arrow {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -45px;
+    bottom: 43%;
+    transition: .10s ease-in-out;
+    z-index: 3;
+  }
+
+  .hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    z-index: 2;
+    opacity: 0;
+    transition: .10s ease-in-out;
+    border-radius: 12px;
+  }
+
+
+}
+
+.project-container:hover {
+
+  height: 300px;
+  box-shadow:
+    0px 12px 32px rgba(0, 0, 0, .2);
+
+  .view-project {
+    position: absolute;
+    right: 120px;
+    bottom: 48%;
+    z-index: 4;
+  }
+
+  .view-project-arrow {
+    position: absolute;
+    right: 54px;
+
+
+  }
+
+  .hover-overlay {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF2565;
+    z-index: 2;
+    opacity: .8;
+  }
+
+
+
+
+}
+
+.project-container {
+  position: relative;
+}
+
+.index-project-info {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
+  z-index: 4;
+}
+
+.index-project-info h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 16px;
+  background-color: #000;
+  width: 75%;
+  padding: 8px 1px 1px 8px;
+
+}
+
+.index-project-info p {
+  color: #fff;
+  background-color: #000;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 4px 4px 4px 8px;
+}
