@@ -11,10 +11,16 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+
+
 html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', sans-serif;
+  display: grid | inline-grid;
 }
 
 /*
@@ -189,7 +195,7 @@ textarea {
   *,
   *::before,
   *::after {
-    background: #fff !important;
+
     color: #000 !important;
     /* Black prints faster */
     box-shadow: none !important;
@@ -250,47 +256,86 @@ textarea {
 
 
 .content-wrapper {
-
-  max-width: 1024px;
-  margin: auto;
-  display: grid;
-
+  position: relative;
+  min-height: 670px;
 }
 
 
-.main-nav {
+.logo img {
+  height: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 32px;
+  padding-right: 48px;
+  background: #fff;
+  height: 80px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  padding-left: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0d47a1
+}
+
+
+#index-hero {
   width: 100%;
+  height: 680px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 40%;
+  -moz-background-size: 40%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: 60%;
+  background-position-x: right;
+  background-position-y: bottom;
+  margin-top: 80px;
+
+
+
 }
 
-#navigation {
-  padding: 30px;
+#my-blurb {
+  padding: 24px;
+  font-size: 24px;
+  font-weight: 800;
+  border: 3px solid #000;
+  border-radius: 32px 32px 0px 32px;
+  box-shadow: 9px 6px 0px -1px rgba(0, 0, 0, 0.08);
+  -webkit-box-shadow: 9px 6px 0px -1px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 9px 6px 0px -1px rgba(0, 0, 0, 0.08);
 }
 
-#navigation ul {
-  float: right;
-}
 
-#navigation ul li {
-  display: inline-block;
-  float: left;
-}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
-#navigation ul li:not(:first-child) {
-  margin-left: 25px;
-}
+  #index-hero {
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 40%;
+    -moz-background-size: 40%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: 85%;
+    background-position-x: right;
+    background-position-y: bottom;
+  }
 
-#navigation ul li a {
-  display: inline-block;
-  outline: none;
-  color: #1f2227;
-  font-size: 16px;
-  text-decoration: none;
-  letter-spacing: 0.04em;
-}
-
-#navigation ul li a:hover {
-  color: #808080;
-  text-decoration: none;
 }
 
 
@@ -299,6 +344,7 @@ textarea {
 /* ==========================================================================
    company sections ---------- >
    ========================================================================== */
+
 
 
 
@@ -346,18 +392,33 @@ textarea {
 
 
 
-
-#MR-index-img {
-  background: lightblue url("/img/homepage/colorist-app-index.png") no-repeat center;
+#Finance-index-img {
+  background: lightblue url("img/homepage/Auction-rebrand-index.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+}
+
+
+#MR-index-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 #Auction-Rebrand-index-img {
-  background: lightblue url("/img/homepage/Auction-rebrand-index.png") no-repeat center;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -367,7 +428,8 @@ textarea {
 
 
 #Auction-TPS-index-img {
-  background: lightblue url("/img/homepage/TPS-index-long.png") no-repeat center;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -377,8 +439,8 @@ textarea {
 
 #Ten-x-offerselect-index-img {
 
-  background: lightblue url("/img/homepage/Offer-select-long.png") no-repeat center;
-
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -391,9 +453,9 @@ textarea {
 
 #Auction-index-android-app-img {
 
-  background: lightblue url("/img/homepage/Auction-android-long.png") no-repeat center;
-
-  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -404,8 +466,8 @@ textarea {
 
 #chimecard-index-img {
 
-  background: lightblue url("/img/homepage/chimecard-index-long.png") no-repeat center;
-
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -416,7 +478,8 @@ textarea {
 
 #Movoto-index-img {
 
-  background: lightblue url("/img/homepage/movoto-index-long.png") no-repeat center;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -441,12 +504,12 @@ textarea {
 
 
   .view-project {
-    font-size: 20;
+    font-size: 32px;
     position: absolute;
     color: #fff;
     right: 120px;
-    bottom: -30px;
-    font-weight: 900;
+    bottom: -70px;
+    font-weight: 500;
   }
 
   .view-project-arrow {
@@ -478,13 +541,12 @@ textarea {
 .project-container:hover {
 
   height: 300px;
-  box-shadow:
-    0px 12px 32px rgba(0, 0, 0, .2);
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, .2);
 
   .view-project {
     position: absolute;
     right: 120px;
-    bottom: 48%;
+    bottom: 33%;
     z-index: 4;
   }
 
@@ -507,9 +569,6 @@ textarea {
     opacity: .8;
   }
 
-
-
-
 }
 
 .project-container {
@@ -518,18 +577,17 @@ textarea {
 
 .index-project-info {
   position: absolute;
-  bottom: 32px;
+  bottom: 0px;
   left: 32px;
   z-index: 4;
 }
 
 .index-project-info h2 {
   color: #fff;
-  font-weight: 900;
-  font-size: 16px;
+  font-weight: 800;
+  font-size: 14px;
   background-color: #000;
-  width: 75%;
-  padding: 8px 1px 1px 8px;
+  padding: 4px 4px 4px 16px;
 
 }
 
@@ -539,4 +597,220 @@ textarea {
   font-size: 30px;
   font-weight: 300;
   padding: 4px 4px 4px 8px;
+}
+
+
+
+
+
+
+
+
+
+
+.project-company-name{
+
+ font-size: 16px; 
+ font-weight: 800;
+ color: #ccc;
+
+
+}
+
+
+.project-name{
+
+font-weight: 800;
+font-size: 32px;  
+  
+}
+
+
+.project-header-image{
+
+height: 360px;
+width: 100%;
+
+}
+
+img{
+width: 100%;
+
+}
+
+#project-header-image-360-Finance{
+
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
+}
+
+
+
+
+
+/* ==== GRID SYSTEM ==== */
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+}
+
+.row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  width: 96%;
+}
+
+.col-1-sm {
+  width: 4.33%;
+}
+
+.col-2-sm {
+  width: 12.66%;
+}
+
+.col-3-sm {
+  width: 21%;
+}
+
+.col-4-sm {
+  width: 29.33%;
+}
+
+.col-5-sm {
+  width: 37.66%;
+}
+
+.col-6-sm {
+  width: 46%;
+}
+
+.col-7-sm {
+  width: 54.33%;
+}
+
+.col-8-sm {
+  width: 62.66%;
+}
+
+.col-9-sm {
+  width: 71%;
+}
+
+.col-10-sm {
+  width: 79.33%;
+}
+
+.col-11-sm {
+  width: 87.66%;
+}
+
+.col-12-sm {
+  width: 96%;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {
+
+  /* 540px */
+  .container {
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 45em) {
+
+  /* 720px */
+  .col-1 {
+    width: 4.33%;
+  }
+
+  .col-2 {
+    width: 12.66%;
+  }
+
+  .col-3 {
+    width: 21%;
+  }
+
+  .col-4 {
+    width: 29.33%;
+  }
+
+  .col-5 {
+    width: 37.66%;
+  }
+
+  .col-6 {
+    width: 46%;
+  }
+
+  .col-7 {
+    width: 54.33%;
+  }
+
+  .col-8 {
+    width: 62.66%;
+  }
+
+  .col-9 {
+    width: 71%;
+  }
+
+  .col-10 {
+    width: 79.33%;
+  }
+
+  .col-11 {
+    width: 87.66%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) {
+
+  /* 960px */
+  .container {
+    width: 90%;
+    max-width: 60rem;
+  }
 }
