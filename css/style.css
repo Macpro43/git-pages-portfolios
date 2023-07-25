@@ -651,6 +651,41 @@ width: 100%;
 
 
 
+/* --   ----- ----  Product Style Sheet ---- - - --- - */
+
+
+
+.backHome{
+  font-size:16px;
+  padding-top:px;
+  display:flex;
+  align-items:center;
+  color:#ccc;
+
+}
+.backArrow{
+width:24px;
+margin-right:12px;
+}
+
+.backHome:hover{
+
+color:#333;
+}
+
+
+.backArrow{
+width:24px;
+margin-right:12px;
+}
+
+
+
+
+
+
+
+
 .spacing-small{
   height: 32px;
 }
