@@ -253,6 +253,9 @@ textarea {
 }
 
 
+p{font-size: 18px;}
+
+h2{font-size: 24px;}
 
 
 .content-wrapper {
@@ -366,29 +369,9 @@ nav a {
 }
 
 
-.work-section-1 {
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
 
-}
 
-.work-section-2 {
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
 
-}
-
-.work-section-3-1 {
-  margin-top: 24px;
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 24px;
-
-}
 
 
 
@@ -581,6 +564,8 @@ nav a {
   bottom: 0px;
   left: 32px;
   z-index: 4;
+  
+
 }
 
 .index-project-info h2 {
@@ -588,7 +573,9 @@ nav a {
   font-weight: 800;
   font-size: 14px;
   background-color: #000;
-  padding: 4px 4px 4px 16px;
+  padding: 4px 4px 4px 10px;
+  width:80%;
+  margin-bottom:-32px;
 
 }
 
@@ -598,6 +585,7 @@ nav a {
   font-size: 30px;
   font-weight: 300;
   padding: 4px 4px 4px 8px;
+  
 }
 
 
@@ -678,10 +666,6 @@ color:#333;
 width:24px;
 margin-right:12px;
 }
-
-
-
-
 
 
 
@@ -864,6 +848,6 @@ margin-right:12px;
   /* 960px */
   .container {
     width: 90%;
-    max-width: 60rem;
+    max-width: 68rem;
   }
 }
