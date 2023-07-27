@@ -304,7 +304,7 @@ min-height: 600px;
 
 #index-hero {
 
-  width: 100%;
+  width: 120%;
   height: 680px;
   position:absolute;
   background-position: center;
@@ -316,6 +316,7 @@ min-height: 600px;
   background-size: 55%;
   background-position-x: right;
   background-position-y: bottom;
+  right: 16px;
   
 
 }
@@ -346,8 +347,8 @@ min-height: 600px;
   border: calc(var(--sizeX) / 10) solid var(--color);
   border-radius: 50px;
   box-sizing: border-box;
-  bottom: 5%;
-  left: 50%;
+  bottom: 8%;
+  left: 48%;
 
 }
 
