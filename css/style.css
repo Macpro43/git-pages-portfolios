@@ -471,6 +471,26 @@ height: 600px;
 @media only screen and (max-width: 40em) { 
 
 
+
+  #index-hero {
+    width: 100%;
+    left: 5%;
+    top: -25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    background-position-x: right;
+    background-position-y: bottom;
+   
+  }
+
+
+
+
   #my-blurb {
     padding: 24px;
     font-size: 24px;
@@ -483,6 +503,10 @@ height: 600px;
     -webkit-box-shadow: 9px 6px 0px -1px rgba(0, 0, 0, 0.08);
     -moz-box-shadow: 9px 6px 0px -1px rgba(0, 0, 0, 0.08);
   }
+
+
+
+
 
 
 }
