@@ -252,10 +252,12 @@ textarea {
   }
 }
 
+h1{font-size: 40px;}
+h2{font-size: 24px;}
 
 p{font-size: 18px;}
 
-h2{font-size: 24px;}
+
 
 
 .content-wrapper {
@@ -510,6 +512,12 @@ height: 600px;
   background-size: cover;
 
 }
+
+#edgesites-index-img {
+
+
+}
+
 
 
 #MR-index-img {
@@ -766,6 +774,20 @@ width: 100%;
 
 
 
+#on-going-research{
+
+background-color: #8B31FF;
+padding-top: 32px;
+padding-bottom: 60px;
+color: #fff;
+}
+
+#on-going-research img{
+
+
+}
+
+
 .backHome{
   font-size:16px;
   padding-top:px;
@@ -808,6 +830,19 @@ margin-right:12px;
 .spacing-xxlarge{
   height: 100px;
 }
+
+
+
+
+.drop-shadow-3{
+
+  box-shadow: 10px 10px 107px 0px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 10px 10px 107px 0px rgba(0,0,0,0.24);
+  -moz-box-shadow: 10px 10px 107px 0px rgba(0,0,0,0.24);
+
+}
+
+
 
 
 /* ==== GRID SYSTEM ==== */
