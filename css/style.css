@@ -574,6 +574,30 @@ height: 600px;
 
 }
 
+
+
+#MR-index-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+#MR-index-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
 #Auction-Rebrand-index-img {
   background-position: center;
   background-repeat: no-repeat;
