@@ -544,8 +544,10 @@ height: 600px;
 
 
 
-#Finance-index-img {
-  background: lightblue url("img/homepage/Auction-rebrand-index.png");
+
+
+
+#finance-index-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -555,15 +557,14 @@ height: 600px;
   background-size: cover;
 
 }
+
+
+
+
+
+
 
 #edgesites-index-img {
-
-
-}
-
-
-
-#MR-index-img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -587,16 +588,7 @@ height: 600px;
 
 }
 
-#MR-index-img {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
 
-}
 
 #Auction-Rebrand-index-img {
   background-position: center;
