@@ -329,7 +329,19 @@ height: 600px;
 
 
 .glitch {
-
+  width: 120%;
+  height: 680px;
+  position:absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 55%;
+  -moz-background-size: 55%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: 55%;
+  background-position-x: right;
+  background-position-y: bottom;
+  right: 16px;
 }
 .glitch::before, .glitch::after,
 .glitch .channel {
