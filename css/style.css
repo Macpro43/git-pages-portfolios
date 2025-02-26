@@ -448,14 +448,19 @@ height: 600px;
   mix-blend-mode: screen;
 }
 .glitch .channel::before {
-  bottom: 0;
-  content: "";
-  display: block;
-  mix-blend-mode: multiply;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
+  width: 120%;
+  height: 680px;
+  position:absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: 55%;
+  -moz-background-size: 55%;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: 55%;
+  background-position-x: right;
+  background-position-y: bottom;
+  right: 16px;
 }
 .glitch .r {
   animation: rgb-shift-r 3s steps(1, jump-end) infinite alternate both;
