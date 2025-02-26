@@ -328,21 +328,22 @@ height: 600px;
 
 
 
+.glitch {
+  background: #000 no-repeat center;
+  background-size: 0;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
 .glitch::before, .glitch::after,
 .glitch .channel {
-  width: 120%;
-  height: 680px;
-  position:absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: 55%;
-  -moz-background-size: 55%;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: 55%;
-  background-position-x: right;
-  background-position-y: bottom;
-  right: 16px;
+  background: inherit;
+  background-size: cover;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .glitch::before {
   animation: glitch-before 3s linear infinite alternate both;
@@ -448,19 +449,14 @@ height: 600px;
   mix-blend-mode: screen;
 }
 .glitch .channel::before {
-  width: 120%;
-  height: 680px;
-  position:absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: 55%;
-  -moz-background-size: 55%;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: 55%;
-  background-position-x: right;
-  background-position-y: bottom;
-  right: 16px;
+  bottom: 0;
+  content: "";
+  display: block;
+  mix-blend-mode: multiply;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 .glitch .r {
   animation: rgb-shift-r 3s steps(1, jump-end) infinite alternate both;
