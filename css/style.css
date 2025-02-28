@@ -448,6 +448,7 @@ height: 600px;
   left: 0;
   right: 0;
   top: 0;
+  overflow: hidden;
 }
 .glitch .r {
   animation: rgb-shift-r 3s steps(1, jump-end) infinite alternate both;
