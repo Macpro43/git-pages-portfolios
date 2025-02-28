@@ -320,7 +320,7 @@ height: 600px;
   background-position-x: right;
   background-position-y: bottom;
   right: 16px;
-  
+  z-index: -1;
 
 }
 
