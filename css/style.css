@@ -442,7 +442,6 @@ height: 600px;
 .glitch .channel::before {
   bottom: 0;
   content: "";
-  display: block;
   mix-blend-mode: multiply;
   position: absolute;
   left: 0;
