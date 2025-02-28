@@ -320,7 +320,7 @@ height: 600px;
   background-position-x: right;
   background-position-y: bottom;
   right: 16px;
-  z-index: 3;
+  
 
 }
 
@@ -328,20 +328,13 @@ height: 600px;
 
 .glitch::before, .glitch::after,
 .glitch .channel {
-  width: 120%;
-  height: 680px;
-  position:absolute;
-  background-position: center;
-  background-repeat: no-repeat;
-  -webkit-background-size: 55%;
-  -moz-background-size: 55%;
-  -ms-background-size: cover;
-  -o-background-size: cover;
+  background: inherit;
   background-size: 55%;
-  background-position-x: right;
-  background-position-y: bottom;
-  right: 16px;
-  z-index: 3;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .glitch::before {
   animation: glitch-before 3s linear infinite alternate both;
