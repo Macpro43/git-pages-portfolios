@@ -329,13 +329,7 @@ height: 600px;
 .glitch::before, .glitch::after,
 .glitch .channel {
   background: inherit;
-  -webkit-background-size: 55%;
-  -moz-background-size: 55%;
-  -ms-background-size: cover;
-  -o-background-size: cover;
   background-size: 55%;
-  background-position-x: right;
-  background-position-y: bottom;
   bottom: 0;
   left: 0;
   position: absolute;
